@@ -3,7 +3,7 @@ const menu = document.querySelector('.menu');
 
 function toggleMenu() {
   menu.classList.toggle('menu--active');
-  this.classList.toggle('header__menu-button--opened-menu')
+  menuButton.classList.toggle('header__menu-button--opened-menu')
   document.body.classList.toggle('body-overflow')
 }
 

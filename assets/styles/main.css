@@ -18,10 +18,10 @@ svg {
     flex-shrink: 0;
 }
 
-.body-overflow {
+.body-overflow{
     height: 100dvh;
     max-height: 100dvh;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .container {
