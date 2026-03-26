@@ -141,6 +141,7 @@ svg {
     font-weight: 600;
     padding-right: 40px;
     position: relative;
+    flex-shrink: 0;
 }
 
 .top__location::after {
