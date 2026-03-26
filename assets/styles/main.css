@@ -146,9 +146,9 @@ svg {
 .top__location::after {
     content: "";
     position: absolute;
-    right: 20px;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-20.5px, -50%);
+    right: 0;
     height: 32px;
     width: 1px;
     background-color: #D5D9DF;
@@ -499,10 +499,11 @@ svg {
 
     .top__location {
         padding-right: 32px;
+        gap: 8px;
     }
 
     .top__location::after {
-        right: 0px;
+        transform: translate(-16.5px, -50%);
         height: 18px;
     }
 
