@@ -178,7 +178,6 @@ svg {
 .top__slider {
     display: flex;
     align-items: center;
-    gap: 20px;
     max-width: 1269px;
     padding: 0 24px;
     margin: 0 auto;
@@ -214,6 +213,17 @@ svg {
 
 .top__prev {
     transform: rotate(180deg);
+    width: 0;
+    transition: width 0.3s ease, margin 0.3s ease;
+}
+
+.top__prev--active {
+    width: 48px;
+    margin-right: 20px;
+}
+
+.top__next {
+    margin-left: 20px;
 }
 
 .listings {

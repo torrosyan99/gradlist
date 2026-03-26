@@ -50,6 +50,17 @@ new Swiper('.top__swiper', {
   navigation: {
     nextEl: '.top__next',
     prevEl: '.top__prev',
+  },
+  on: {
+    slideChange: function () {
+      const prevBtn = document.querySelector('.top__prev');
+
+      if (this.activeIndex > 0) {
+        prevBtn.classList.add('top__prev--active'); // добавляешь свой класс
+      } else {
+        prevBtn.classList.remove('top__prev--active');
+      }
+    }
   }
 })
 
