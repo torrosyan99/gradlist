@@ -126,18 +126,12 @@ svg {
     display: flex;
     align-items: center;
     margin-top: 25px;
-    gap: 20px;
     padding: 8px;
     border-radius: 10px;
     box-shadow: 0 8px 20px 0 rgba(226, 230, 237, 0.6);
     background-color: var(--white-color);
 }
 
-.top__form-line {
-    height: 32px;
-    width: 1px;
-    background-color: #D5D9DF;
-}
 
 .top__location {
     display: flex;
@@ -145,6 +139,19 @@ svg {
     gap: 6px;
     font-size: 18px;
     font-weight: 600;
+    margin-right: 40px;
+    position: relative;
+}
+
+.top__location::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 32px;
+    width: 1px;
+    background-color: #D5D9DF;
 }
 
 .top__input {
@@ -490,6 +497,14 @@ svg {
         padding: 12px 16px;
     }
 
+    .top__location {
+        margin-right: 32px;
+    }
+
+    .top__location::after {
+        right: -16px;
+        height: 18px;
+    }
 
     .top__location-icon {
         display: none;
@@ -500,14 +515,6 @@ svg {
         height: 16px;
         margin-left: 0;
         --chevron-color: #FE5823;
-    }
-
-    .top__form {
-        gap: 16px;
-    }
-
-    .top__form-line {
-        height: 18px;
     }
 
     .top__form-button {
