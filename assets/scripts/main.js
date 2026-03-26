@@ -30,6 +30,7 @@ new Swiper('.top__swiper', {
   spaceBetween: 15,
   navigation: {
     nextEl: '.top__next',
+    prevEl: '.top__prev',
   }
 })
 
