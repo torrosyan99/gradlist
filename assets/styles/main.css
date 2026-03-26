@@ -239,6 +239,7 @@ svg {
 }
 
 .listings__item {
+    color: var(--primary-color);
     padding: 10px 10px 15px;
     border-radius: 10px;
     box-shadow: 0 8px 20px 0 rgba(226, 230, 237, 0.6);
@@ -347,13 +348,13 @@ svg {
     gap: 6px;
 }
 
-.listings__banners {
+.listings__blocks {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.listings__banner {
+.listings__block {
     background-color: #dae0e9;
     border-radius: 10px;
     height: 318px;
@@ -597,11 +598,11 @@ svg {
         max-width: 100%;
     }
 
-    .listings__banner {
+    .listings__block {
         height: 160px;
     }
 
-    .listings__banner:last-child {
+    .listings__block:last-child {
         display: none;
     }
 }
