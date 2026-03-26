@@ -139,14 +139,14 @@ svg {
     gap: 6px;
     font-size: 18px;
     font-weight: 600;
-    margin-right: 40px;
+    padding-right: 40px;
     position: relative;
 }
 
 .top__location::after {
     content: "";
     position: absolute;
-    right: -20px;
+    right: 20px;
     top: 50%;
     transform: translate(-50%, -50%);
     height: 32px;
@@ -498,11 +498,11 @@ svg {
     }
 
     .top__location {
-        margin-right: 32px;
+        padding-right: 32px;
     }
 
     .top__location::after {
-        right: -16px;
+        right: 16px;
         height: 18px;
     }
 
