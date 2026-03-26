@@ -126,6 +126,7 @@ svg {
     display: flex;
     align-items: center;
     margin-top: 25px;
+    gap: 20px;
     padding: 8px;
     border-radius: 10px;
     box-shadow: 0 8px 20px 0 rgba(226, 230, 237, 0.6);
@@ -133,7 +134,6 @@ svg {
 }
 
 .top__form-line {
-    margin-right: 20px;
     height: 32px;
     width: 1px;
     background-color: #D5D9DF;
@@ -145,7 +145,6 @@ svg {
     gap: 6px;
     font-size: 18px;
     font-weight: 600;
-    margin-right: 20px;
 }
 
 .top__input {
@@ -491,9 +490,6 @@ svg {
         padding: 12px 16px;
     }
 
-    .top__location {
-        margin-right: 16px;
-    }
 
     .top__location-icon {
         display: none;
@@ -506,9 +502,12 @@ svg {
         --chevron-color: #FE5823;
     }
 
+    .top__form {
+        gap: 16px;
+    }
+
     .top__form-line {
         height: 18px;
-        margin-right: 16px;
     }
 
     .top__form-button {
