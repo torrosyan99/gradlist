@@ -502,7 +502,7 @@ svg {
     }
 
     .top__location::after {
-        right: 16px;
+        right: 0px;
         height: 18px;
     }
 
