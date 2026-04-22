@@ -338,7 +338,7 @@ svg {
 }
 
 .listings__logo,
-.footer__logo{
+.footer__logo {
     font-size: 22.72px;
     gap: 7.71px;
 }
@@ -461,7 +461,7 @@ svg {
     width: 100%;
 }
 
-.product__thumbs{
+.product__thumbs {
     margin-top: 15px;
     display: flex;
     align-items: center;
@@ -566,6 +566,7 @@ svg {
     gap: 10px;
     align-items: center;
 }
+
 .product__stars {
     display: flex;
     gap: 4px;
@@ -592,38 +593,49 @@ svg {
 }
 
 .product__info-buttons {
-   margin-top: 20px;
+    margin-top: 40px;
     display: flex;
+    border-top: 1.5px solid #E0E4E9;
+border-radius: 4px 0 0 0 ;
 }
+
+
 
 .product__tabs-button {
-    padding: 10px 20px;
-border-radius: 10px 10px 0 0;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 600;
+    padding: 14px 20px;
+    border-radius: 4px 0 0 0;
+    font-size: 20px;
+    font-weight: 700;
     position: relative;
+    color: var(--gray-color-1);
 }
 
-.product__tabs-button.tabs__button--active::after {
-    content: "";
-    bottom: -8px;
-    left: 0;
-    right: 0;
-    position: absolute;
-    background-color: var(--white-color);
-    height: 10px;
-}
 
 .product__tabs-button.tabs__button--active {
     background-color: var(--white-color);
+    color: var(--primary-color);
+    position: relative;
+}
+
+.product__tabs-button.tabs__button--active::before {
+    content: "";
+    position: absolute;
+    top: -1.25px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-top: 1.5px solid  #0071FE;
+}
+
+.product__tabs-button.tabs__button--active:first-child::before {
+    border-radius: 4px  0 0 0;
 }
 
 .product__tabs-item {
     padding: 20px;
     background-color: var(--white-color);
-    border-radius: 10px;
-    margin-bottom: 40px;
+    border-radius: 0 0 4px 4px;
+    margin-bottom: 53px;
 }
 
 .product__text {
