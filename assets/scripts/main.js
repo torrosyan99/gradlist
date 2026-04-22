@@ -25,21 +25,21 @@ menuButton.addEventListener('click', toggleMenu)
 
 const input = document.querySelector('.top__input')
 
-if(input) {
+if (input) {
 // обновление плейсхолдера в зависимости от ширины
-const updatePlaceholder = () => {
-  if (window.innerWidth < 768) {
-    input.placeholder = 'Поиск' // мобильная версия
-  } else {
-    input.placeholder = 'Поиск: квартиры, авто, работа ...' // десктоп
+  const updatePlaceholder = () => {
+    if (window.innerWidth < 768) {
+      input.placeholder = 'Поиск' // мобильная версия
+    } else {
+      input.placeholder = 'Поиск: квартиры, авто, работа ...' // десктоп
+    }
   }
-}
 
 // первичная инициализация
-updatePlaceholder()
+  updatePlaceholder()
 
 // обновление при ресайзе
-window.addEventListener('resize', updatePlaceholder)
+  window.addEventListener('resize', updatePlaceholder)
 }
 
 // ===== SWIPER INIT =====
@@ -53,15 +53,15 @@ new Swiper('.top__swiper', {
     prevEl: '.top__prev',
   },
   on: {
-      slideChange: function () {
-        const prevBtn = document.querySelector('.top__prev');
+    slideChange: function () {
+      const prevBtn = document.querySelector('.top__prev');
 
-        if (this.activeIndex > 0) {
-          prevBtn.classList.add('top__prev--active'); // добавляешь свой класс
-        } else {
-          prevBtn.classList.remove('top__prev--active');
-        }
+      if (this.activeIndex > 0) {
+        prevBtn.classList.add('top__prev--active'); // добавляешь свой класс
+      } else {
+        prevBtn.classList.remove('top__prev--active');
       }
+    }
   }
 })
 
@@ -76,7 +76,7 @@ new Swiper('.top__mobile-swiper', {
 
 // контейнер со всеми карточками
 const container = document.querySelector('.listings__items')
-if(container) {
+if (container) {
 // текущие элементы (первичный рендер)
   const items = Array.from(container.querySelectorAll('.listings__item'))
 
@@ -129,51 +129,46 @@ const swiper = new Swiper(".product__swiper", {
   slidesPerView: 'auto',
   freeMode: true,
   watchSlidesProgress: true,
-  navigation: {
-    nextEl: ".product__slider-next",
-    prevEl: ".product__slider-prev",
-  },
-  on: {
-    slideChange: function () {
-      const prevBtn = document.querySelector('.product__slider-prev');
-
-      if (this.activeIndex > 0) {
-        prevBtn.classList.add('product__slider-prev--active'); // добавляешь свой класс
-      } else {
-        prevBtn.classList.remove('product__slider-prev--active');
-      }
-    }
-  }
 });
 
-if(swiper) {
+if (swiper) {
   new Swiper(".product__main-swiper", {
-  loop: true,
-  spaceBetween: 10,
-  thumbs: {
-    swiper: swiper,
-  },
-});
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 1.15,
+    breakpoints: {
+     768: {
+       slidesPerView: 1,
+     }
+    },
+    navigation: {
+      nextEl: ".product__slider-next",
+      prevEl: ".product__slider-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
 }
 
 class Tabs {
   constructor(tabsClass) {
     const tabs = document.querySelector(tabsClass);
-    if(!tabs) return
+    if (!tabs) return
     this.data = {};
     this.activeTab = null;
-    this.activeButton  = null;
+    this.activeButton = null;
 
 
     const tabsButtons = tabs.querySelectorAll('.tabs__button');
-    if(tabsButtons.length > 0 ) {
+    if (tabsButtons.length > 0) {
       tabsButtons[0].classList.add('tabs__button--active');
       this.activeButton = tabsButtons[0]
     }
     const tabsItems = tabs.querySelectorAll('.tabs__item');
-    for(let i = 0; i < tabsItems.length; i++) {
+    for (let i = 0; i < tabsItems.length; i++) {
       const item = tabsItems[i];
-      if(i === 0) {
+      if (i === 0) {
         item.classList.add('tabs__item--active');
         this.activeTab = item;
       }
@@ -181,16 +176,16 @@ class Tabs {
     }
 
     tabs.addEventListener('click', (e) => {
-       const target = e.target;
-       const button = target.closest('.tabs__button')
-      if(button && button !== this.activeButton ) {
+      const target = e.target;
+      const button = target.closest('.tabs__button')
+      if (button && button !== this.activeButton) {
         this.activeButton.classList.remove('tabs__button--active');
         this.activeTab.classList.remove('tabs__item--active');
         button.classList.add('tabs__button--active')
         this.data[button.dataset.index].classList.add('tabs__item--active')
 
         this.activeButton = button;
-        this.activeTab =   this.data[button.dataset.index]
+        this.activeTab = this.data[button.dataset.index]
       }
 
     })
