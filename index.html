@@ -18,7 +18,7 @@
 
 <header class="header">
 	<div class="container header__inner">
-		<a class="logo">
+		<a class="logo" href="#">
 			<svg class="logo__icon" width="37" height="50">
 				<use xlink:href="assets/icons/icons.svg#logo"></use>
 			</svg>
@@ -140,730 +140,277 @@
 </div>
 
 <main class="main">
-	<section class="top">
-		<div class="container">
-			<div class="top__content">
-				<div class="top__wrapper">
-					<h1 class="top__title">Найдите нужное в <span>вашем городе</span></h1>
-					<form class="top__form">
-						<button class="top__location" type="button">
-							<svg class="top__location-icon" width="28" height="28">
-								<use xlink:href="assets/icons/icons.svg#location"></use>
-							</svg>
-							<span>Москва</span>
-							<svg class="top__location-chevron" width="24" height="24">
-								<use xlink:href="assets/icons/icons.svg#chevron-bottom"></use>
-							</svg>
-						</button>
-						<input class="top__input" type="text"/>
-						<button class="button top__form-button">
-							<svg width="24" height="24">
-								<use xlink:href="assets/icons/icons.svg#search"></use>
-							</svg>
-							<span>
-							Найти
-
-							</span>
-						</button>
-					</form>
-				</div>
-				<div class="top__image-wrapper">
-					<img class="top__image" src="assets/images/top-image.png" alt="img"/>
-				</div>
-			</div>
+	<div class="breadcrumbs">
+		<div class="container breadcrumbs__inner">
+			<a class="breadcrumbs__link" href="#">Главная</a>
+			<svg width="12" height="12">
+				<use xlink:href="assets/icons/icons.svg#breadcrumbs-icon"></use>
+			</svg>
+			<a class="breadcrumbs__link" href="#">Объявления</a>
+			<svg width="12" height="12">
+				<use xlink:href="assets/icons/icons.svg#breadcrumbs-icon"></use>
+			</svg>
+			<a class="breadcrumbs__link breadcrumbs__link--active" href="#">Недвижимость</a>
 		</div>
-		<div class="top__slider">
-			<button class="top__prev">
-				<svg width="48" height="48">
-					<use xlink:href="assets/icons/icons.svg#slider-icon"></use>
-				</svg>
-			</button>
-			<div class="top__swiper swiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#round-home"></use>
-							</svg>
-							<h5 class="top__item-name">Недвижимость</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#car"></use>
-							</svg>
-							<h5 class="top__item-name">Авто</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#work"></use>
-							</svg>
-							<h5 class="top__item-name">Работа</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#hobby-sport"></use>
-							</svg>
-							<h5 class="top__item-name">Хобби и спорт</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#fashion-style"></use>
-							</svg>
-							<h5 class="top__item-name">Мода и стиль</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#animal"></use>
-							</svg>
-							<h5 class="top__item-name">Животные</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#business-services"></use>
-							</svg>
-							<h5 class="top__item-name">Бизнес и услуги</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#toy"></use>
-							</svg>
-							<h5 class="top__item-name">Детский мир</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#electronics"></use>
-							</svg>
-							<h5 class="top__item-name">Электроника</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#spares"></use>
-							</svg>
-							<h5 class="top__item-name">Запчасти</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#cart"></use>
-							</svg>
-							<h5 class="top__item-name">Дом и сад</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<button class="top__next">
-				<svg width="48" height="48">
-					<use xlink:href="assets/icons/icons.svg#slider-icon"></use>
-				</svg>
-			</button>
-			<div class="top__mobile-swiper swiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#round-home"></use>
-							</svg>
-							<h5 class="top__item-name">Недвижи-мость</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#work"></use>
-							</svg>
-							<h5 class="top__item-name">Работа</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#car"></use>
-							</svg>
-							<h5 class="top__item-name">Авто</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#hobby-sport"></use>
-							</svg>
-							<h5 class="top__item-name">Хобби и спорт</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#fashion-style"></use>
-							</svg>
-							<h5 class="top__item-name">Мода <br/> и стиль</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#animal"></use>
-							</svg>
-							<h5 class="top__item-name">Животные</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#business-services"></use>
-							</svg>
-							<h5 class="top__item-name">Бизнес и услуги</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#toy"></use>
-							</svg>
-							<h5 class="top__item-name">Детский мир</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#electronics"></use>
-							</svg>
-							<h5 class="top__item-name">Электроника</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#spares"></use>
-							</svg>
-							<h5 class="top__item-name">Запчасти</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="top__slider-item">
-							<svg width="42" height="42">
-								<use xlink:href="assets/icons/icons.svg#cart"></use>
-							</svg>
-							<h5 class="top__item-name">Дом и сад</h5>
-							<p class="top__item-value">1 245</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	</div>
 
-	<section class="listings">
+	<section class="product">
 		<div class="container">
-			<h3 class="listings__title">
-				Свежие объявления
-			</h3>
-			<div class="listings__row">
-				<div class="listings__items">
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-1.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">2-к квартира, 65м<sup>2</sup></h5>
-						<p class="listings__item-price">
-							6 500 000 ₽
-						</p>
-						<div class="listings__info">
-							<span>Москва</span>
-							<div class="listings__circle"></div>
-							<span>3ч. назад</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-2.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#orange-heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">Volkswagen Polo</h5>
-						<p class="listings__item-price">
-							720 000 ₽
-						</p>
-						<div class="listings__info">
-							<span>2018</span>
-							<div class="listings__circle"></div>
-							<span>70 000 км</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-3.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">Велосипед горный</h5>
-						<p class="listings__item-price">
-							15 000 ₽
-						</p>
-						<div class="listings__info">
-							<span>м. Динамо</span>
-							<div class="listings__circle"></div>
-							<span>3ч. назад</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-4.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">Смартфон Samsung</h5>
-						<p class="listings__item-price">
-							14 500 ₽
-						</p>
-						<div class="listings__info">
-							<span>В идеальном состоянии</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-1.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">2-к квартира, 65м<sup>2</sup></h5>
-						<p class="listings__item-price">
-							6 500 000 ₽
-						</p>
-						<div class="listings__info">
-							<span>Москва</span>
-							<div class="listings__circle"></div>
-							<span>3ч. назад</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-2.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#orange-heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">Volkswagen Polo</h5>
-						<p class="listings__item-price">
-							720 000 ₽
-						</p>
-						<div class="listings__info">
-							<span>2018</span>
-							<div class="listings__circle"></div>
-							<span>70 000 км</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-3.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">Велосипед горный</h5>
-						<p class="listings__item-price">
-							15 000 ₽
-						</p>
-						<div class="listings__info">
-							<span>м. Динамо</span>
-							<div class="listings__circle"></div>
-							<span>3ч. назад</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-4.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">Смартфон Samsung</h5>
-						<p class="listings__item-price">
-							14 500 ₽
-						</p>
-						<div class="listings__info">
-							<span>В идеальном состоянии</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-1.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">2-к квартира, 65м<sup>2</sup></h5>
-						<p class="listings__item-price">
-							6 500 000 ₽
-						</p>
-						<div class="listings__info">
-							<span>Москва</span>
-							<div class="listings__circle"></div>
-							<span>3ч. назад</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-2.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#orange-heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">Volkswagen Polo</h5>
-						<p class="listings__item-price">
-							720 000 ₽
-						</p>
-						<div class="listings__info">
-							<span>2018</span>
-							<div class="listings__circle"></div>
-							<span>70 000 км</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-3.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">Велосипед горный</h5>
-						<p class="listings__item-price">
-							15 000 ₽
-						</p>
-						<div class="listings__info">
-							<span>м. Динамо</span>
-							<div class="listings__circle"></div>
-							<span>3ч. назад</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-4.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">Смартфон Samsung</h5>
-						<p class="listings__item-price">
-							14 500 ₽
-						</p>
-						<div class="listings__info">
-							<span>В идеальном состоянии</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-1.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">2-к квартира, 65м<sup>2</sup></h5>
-						<p class="listings__item-price">
-							6 500 000 ₽
-						</p>
-						<div class="listings__info">
-							<span>Москва</span>
-							<div class="listings__circle"></div>
-							<span>3ч. назад</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-2.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#orange-heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">Volkswagen Polo</h5>
-						<p class="listings__item-price">
-							720 000 ₽
-						</p>
-						<div class="listings__info">
-							<span>2018</span>
-							<div class="listings__circle"></div>
-							<span>70 000 км</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-3.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">Велосипед горный</h5>
-						<p class="listings__item-price">
-							15 000 ₽
-						</p>
-						<div class="listings__info">
-							<span>м. Динамо</span>
-							<div class="listings__circle"></div>
-							<span>3ч. назад</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-4.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">Смартфон Samsung</h5>
-						<p class="listings__item-price">
-							14 500 ₽
-						</p>
-						<div class="listings__info">
-							<span>В идеальном состоянии</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-1.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">2-к квартира, 65м<sup>2</sup></h5>
-						<p class="listings__item-price">
-							6 500 000 ₽
-						</p>
-						<div class="listings__info">
-							<span>Москва</span>
-							<div class="listings__circle"></div>
-							<span>3ч. назад</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-2.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#orange-heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">Volkswagen Polo</h5>
-						<p class="listings__item-price">
-							720 000 ₽
-						</p>
-						<div class="listings__info">
-							<span>2018</span>
-							<div class="listings__circle"></div>
-							<span>70 000 км</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-3.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">Велосипед горный</h5>
-						<p class="listings__item-price">
-							15 000 ₽
-						</p>
-						<div class="listings__info">
-							<span>м. Динамо</span>
-							<div class="listings__circle"></div>
-							<span>3ч. назад</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-4.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">Смартфон Samsung</h5>
-						<p class="listings__item-price">
-							14 500 ₽
-						</p>
-						<div class="listings__info">
-							<span>В идеальном состоянии</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-1.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">2-к квартира, 65м<sup>2</sup></h5>
-						<p class="listings__item-price">
-							6 500 000 ₽
-						</p>
-						<div class="listings__info">
-							<span>Москва</span>
-							<div class="listings__circle"></div>
-							<span>3ч. назад</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-2.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#orange-heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">Volkswagen Polo</h5>
-						<p class="listings__item-price">
-							720 000 ₽
-						</p>
-						<div class="listings__info">
-							<span>2018</span>
-							<div class="listings__circle"></div>
-							<span>70 000 км</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-3.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">Велосипед горный</h5>
-						<p class="listings__item-price">
-							15 000 ₽
-						</p>
-						<div class="listings__info">
-							<span>м. Динамо</span>
-							<div class="listings__circle"></div>
-							<span>3ч. назад</span>
-						</div>
-					</a>
-					<a class="listings__item" href="#">
-						<div class="listings__image-wrapper">
-							<img class="listings__image" src="assets/images/listings-img-4.png" alt="img"/>
-							<svg class="listings__heart" width="18" height="18">
-								<use xlink:href="assets/icons/icons.svg#heart"></use>
-							</svg>
-						</div>
-						<h5 class="listings__item-name">Смартфон Samsung</h5>
-						<p class="listings__item-price">
-							14 500 ₽
-						</p>
-						<div class="listings__info">
-							<span>В идеальном состоянии</span>
-						</div>
-					</a>
+			<div class="product__top">
+				<h2 class="product__title">
+					Продам 2-к квартиру , 65 м2, в центре Москвы
+				</h2>
+				<button class="product__button">
+					<svg width="22" height="19">
+						<use xlink:href="assets/icons/icons.svg#product-heart"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="product__meta">
+				<div class="product__meta-item product__location">
+					<svg width="18" height="18">
+						<use xlink:href="assets/icons/icons.svg#product-location"></use>
+					</svg>
+					Москва, ул. Советская, 17
 				</div>
-				<div class="listings__right">
-					<ul class="listings__list">
-						<li class="listings__list-item">
-							<svg width="20" height="20">
-								<use xlink:href="assets/icons/icons.svg#blue-check"></use>
-							</svg>
-							<div class="listings__list-wrapper">
-								<h5 class="listings__list-item-name">Доставка</h5>
-								<p class="listings__list-item-text">
-									Удобная и быстрая — ваш товар привозят прямо к двери без лишних хлопот.
-								</p>
+				<div class="product__line"></div>
+				<div class="product__meta-item">
+					<svg width="18" height="18">
+						<use xlink:href="assets/icons/icons.svg#time-clock"></use>
+					</svg>
+					6 часов назад
+				</div>
+				<div class="product__line"></div>
+				<div class="product__meta-item">
+					<svg width="18" height="18">
+						<use xlink:href="assets/icons/icons.svg#eye"></use>
+					</svg>
+					153 просмотра
+				</div>
+			</div>
+			<div class="product__row">
+				<div class="product__left">
+					<div class="product__slider">
+						<div class="product__main-swiper swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img class="product__main-img" src="assets/images/product-main.png"
+									     alt="main-product-img"/>
+								</div>
+								<div class="swiper-slide">
+									<img class="product__main-img" src="assets/images/product-main.png"
+									     alt="main-product-img"/>
+								</div>
+								<div class="swiper-slide">
+									<img class="product__main-img" src="assets/images/product-main.png"
+									     alt="main-product-img"/>
+								</div>
+								<div class="swiper-slide">
+									<img class="product__main-img" src="assets/images/product-main.png"
+									     alt="main-product-img"/>
+								</div>
+								<div class="swiper-slide">
+									<img class="product__main-img" src="assets/images/product-main.png"
+									     alt="main-product-img"/>
+								</div>
+								<div class="swiper-slide">
+									<img class="product__main-img" src="assets/images/product-main.png"
+									     alt="main-product-img"/>
+								</div>
+								<div class="swiper-slide">
+									<img class="product__main-img" src="assets/images/product-main.png"
+									     alt="main-product-img"/>
+								</div>
 							</div>
-						</li>
-						<li class="listings__list-item">
-							<svg width="20" height="20">
-								<use xlink:href="assets/icons/icons.svg#blue-check"></use>
-							</svg>
-							<div class="listings__list-wrapper">
-								<h5 class="listings__list-item-name">Безопасная сделка</h5>
-								<p class="listings__list-item-text">
-									Защищает обе стороны — оплата только после получения и проверки. </p>
+						</div>
+						<div class="product__thumbs">
+							<button class="product__slider-prev product__slider-button">
+								<svg width="48" height="48">
+									<use xlink:href="assets/icons/icons.svg#slider-icon"></use>
+								</svg>
+							</button>
+							<div class="product__swiper swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide product__slide-item">
+										<img class="product__img" src="assets/images/product.png" alt="product-img"/>
+									</div>
+									<div class="swiper-slide product__slide-item">
+										<img class="product__img" src="assets/images/product.png" alt="product-img"/>
+									</div>
+									<div class="swiper-slide product__slide-item">
+										<img class="product__img" src="assets/images/product.png" alt="product-img"/>
+									</div>
+									<div class="swiper-slide product__slide-item">
+										<img class="product__img" src="assets/images/product.png" alt="product-img"/>
+									</div>
+									<div class="swiper-slide product__slide-item">
+										<img class="product__img" src="assets/images/product.png" alt="product-img"/>
+									</div>
+									<div class="swiper-slide product__slide-item">
+										<img class="product__img" src="assets/images/product.png" alt="product-img"/>
+									</div>
+									<div class="swiper-slide product__slide-item">
+										<img class="product__img" src="assets/images/product.png" alt="product-img"/>
+									</div>
+								</div>
 							</div>
-						</li>
-						<li class="listings__list-item">
-							<svg width="20" height="20">
-								<use xlink:href="assets/icons/icons.svg#blue-check"></use>
-							</svg>
-							<div class="listings__list-wrapper">
-								<h5 class="listings__list-item-name">Надежные продавцы</h5>
-								<p class="listings__list-item-text">
-									Проходят проверку — только проверенные пользователи. </p>
-							</div>
-						</li>
-					</ul>
-					<div class="listings__wrapper">
-						<div class="logo listings__logo">
-							<svg width="23" height="33">
+							<button class="product__slider-next product__slider-button">
+								<svg width="48" height="48">
+									<use xlink:href="assets/icons/icons.svg#slider-icon"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="product__info tabs">
+						<div class="product__info-buttons">
+							<button class="tabs__button product__tabs-button" data-index="1">Описание</button>
+							<button class="tabs__button product__tabs-button" data-index="2">Характеристики</button>
+							<button class="tabs__button product__tabs-button" data-index="3">Расположение</button>
+						</div>
+						<div class="tabs__item product__tabs-item" data-index="1">
+							<p class="product__text">
+								Идеальное расположение: центр Москвы, 5 минут пешком до метро, рядом Кремль, Тверская,
+								ГУМ и лучшие рестораны. Полная инфраструктура: школы, сады, поликлиники, парки. Квартира
+								в отличном состоянии: свежий ремонт (ламинат, натяжные потолки, новая сантехника),
+								просторная кухня-гостиная 20 м², 2 уютные спальни, большая лоджия с видом на город.
+								Высота потолков 2,8 м. Все коммуникации в порядке.
+							</p>
+						</div>
+						<div class="tabs__item product__tabs-item" data-index="2">
+							<ul class="product__list">
+								<li class="product__list-item">
+									Количество комнат: <span>2</span>
+								</li>
+								<li class="product__list-item">
+									Тип комнат: <span>смежные</span>
+								</li>
+								<li class="product__list-item">
+									Общая площадь: <span>41.3 м²</span>
+								</li>
+								<li class="product__list-item">
+									Санузел: <span>совмещенный</span>
+								</li>
+								<li class="product__list-item">
+									Площадь кухни: <span>6 м²</span>
+								</li>
+								<li class="product__list-item">
+									Окна: <span>на улицу, на солнечную сторону</span>
+								</li>
+								<li class="product__list-item">
+									Жилая площадь:  <span>29 м²</span>
+								</li>
+								<li class="product__list-item">
+									Ремонт: <span>дизайнерский</span>
+								</li>
+								<li class="product__list-item">
+									Этаж:  <span>2 из 5</span>
+								</li>
+								<li class="product__list-item">
+									Мебель: <span>кухня, хранение одежды, спальные места</span>
+								</li>
+								<li class="product__list-item">
+									Дополнительно:  <span>гардеробная</span>
+								</li>
+								<li class="product__list-item">
+									Способ продажи:  <span>свободная</span>
+								</li>
+							</ul>
+						</div>
+						<div class="tabs__item product__tabs-item" data-index="3">
+						<img class="product__map" alt="map" src="assets/images/map.png" />
+						</div>
+					</div>
+					<footer class="footer">
+						<a class="logo">
+							<svg class="logo__icon" width="37" height="50">
 								<use xlink:href="assets/icons/icons.svg#logo"></use>
 							</svg>
 							Gradlist
-						</div>
-						<nav class="listings__nav">
-							<ul class="listings__nav-list">
-								<li class="listings__nav-item">
-									<a class="listings__link" href="#">О проекте</a>
+						</a>
+						<nav class="footer__nav">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a class="footer__link" href="#">О проекте</a>
 								</li>
-								<li class="listings__nav-item">
-									<a class="listings__link" href="#">Правила</a>
+								<li class="footer__item">
+									<a class="footer__link" href="#">Правила</a>
 								</li>
-								<li class="listings__nav-item">
-									<a class="listings__link" href="#">Контакты</a>
+								<li class="footer__item">
+									<a class="footer__link" href="#">Контакты</a>
 								</li>
 							</ul>
-							<ul class="listings__socials">
-								<li class="listings__social">
-									<a class="listings__social-link" href="#">
-										<svg width="28" height="28">
+						</nav>
+						<nav class="footer__nav">
+							<ul class="footer__socials-list">
+								<li class="footer__socials-list">
+									<a class="footer__socials-link" href="#">
+										<svg width="50" height="50">
 											<use xlink:href="assets/icons/icons.svg#inst"></use>
 										</svg>
 									</a>
 								</li>
-								<li class="listings__social">
-									<a class="listings__social-link" href="#">
-										<svg width="28" height="28">
+								<li class="footer__socials-list">
+									<a class="footer__socials-link" href="#">
+										<svg width="50" height="50">
 											<use xlink:href="assets/icons/icons.svg#tg"></use>
 										</svg>
 									</a>
 								</li>
-								<li class="listings__social">
-									<a class="listings__social-link" href="#">
-										<svg width="28" height="28">
+								<li class="footer__socials-list">
+									<a class="footer__socials-link" href="#">
+										<svg width="50" height="50">
 											<use xlink:href="assets/icons/icons.svg#vk"></use>
 										</svg>
 									</a>
 								</li>
 							</ul>
-
 						</nav>
+					</footer>
+				</div>
+				<div class="product__right">
+					<div class="product__box">
+						<p class="product__price">
+							6 500 000 ₽
+						</p>
+						<div class="product__buttons">
+							<button class="button button--green product__contact-button">Позвонить</button>
+							<button class="button product__contact-button">Написать в чате</button>
+						</div>
+						<div class="product__box-bottom">
+							<div class="product__salesman">
+								<img class="product__salesman-img" src="assets/images/salesman-img.png" alt="salesman"/>
+								<div class="product__salesman-wrapper">
+									<p class="product__salesman-name">
+										Алексей
+									</p>
+									<span class="product__salesman-position">Частное лицо</span>
+								</div>
+							</div>
+							<div class="product__box-flex">
+								<div class="product__rating">
+									<div class="product__stars">
+										<svg width="12" height="12">
+											<use xlink:href="assets/icons/icons.svg#star"></use>
+										</svg>
+										<svg width="12" height="12">
+											<use xlink:href="assets/icons/icons.svg#star"></use>
+										</svg>
+										<svg width="12" height="12">
+											<use xlink:href="assets/icons/icons.svg#star"></use>
+										</svg>
+										<svg width="12" height="12">
+											<use xlink:href="assets/icons/icons.svg#star"></use>
+										</svg>
+										<svg width="12" height="12">
+											<use xlink:href="assets/icons/icons.svg#star"></use>
+										</svg>
+									</div>
+									<span>4.8</span>
+								</div>
+								<div class="product__line"></div>
+								<span class="product__advertisement">4 объявления</span>
+							</div>
+						</div>
 					</div>
 					<div class="listings__blocks">
 						<div class="listings__block"></div>
@@ -873,6 +420,9 @@
 			</div>
 		</div>
 	</section>
+
+
+
 </main>
 
 </body>
